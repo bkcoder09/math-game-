@@ -1,37 +1,29 @@
 <html>
     <head> 
     <title> The Math Quiz Game! </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></script>
-
-    <link rel="stylesheet" type="text/css" href="output.css">
-
-    <script src="output.js"></script>
+    <script src="main.js"></script>
     </head>
-    <body style="background-color:darkturquoise;">
-        <div class="container">
-            <h4 id="player1"></h4> <span id="player1_score"></span>
+
+    <body>
+        <center>
+            <h1> Game </h1>
+            <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+                <h2> Player 1 Login for the game </h2>
+                <label> User Name: </label>
+                <input type="text" id="input_1" placeholder="Player 1 Name" class="form-control">
+                <br>
+            </div>
             <br>
-            <h4 id="player2"></h4> <span id="player2_score"></span>
-            <center>
-                <h2 style="color:white;"> The Math Quiz Game! </h2>
-                <h3> Question Turn - <span id="question"></span> </h3>
-                <h3> Answer Turn - <span id="answer"></span> </h3>
-                <div id="ouput" class="col-lg-6" style="background:white; border-radius:10px; border-top:10px solid fuchsia; padding:10px; float:none;
-                text-align:left;">
-                </div>
+            <div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
+                <h2> Player 2 Login for the game </h2>
+                <label> User Name: </label>
+                <input type="text" id="input_2" placeholder="Player 2 Name" class="form-control">
                 <br>
-                <h3> Number 1 </h3>
-                <input type="text" class="form-control" placeholder="Number 1" id="number1">
-                <br>
-                <h3> Number 2 </h3>
-                <input type="text" class="form-control" placeholder="Number 2" id="number2">
-                <br>
-                <button type="button" onclick="send()" class="btn btn-info" style="width:30%"> Send </button> 
-            </center>
-        </div>
+            </div>
+            <br>
+                <button type="button" class="btn btn-danger" onclick="login()"> Login </button>
+        </center>
     </body>
-    </html>
+</html>
