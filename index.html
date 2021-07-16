@@ -1,29 +1,12 @@
 <html>
-    <head> 
-    <title> The Math Quiz Game! </title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <script src="main.js"></script>
-    </head>
-
-    <body>
-        <center>
-            <h1> Game </h1>
-            <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
-                <h2> Player 1 Login for the game </h2>
-                <label> User Name: </label>
-                <input type="text" id="input_1" placeholder="Player 1 Name" class="form-control">
-                <br>
-            </div>
-            <br>
-            <div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
-                <h2> Player 2 Login for the game </h2>
-                <label> User Name: </label>
-                <input type="text" id="input_2" placeholder="Player 2 Name" class="form-control">
-                <br>
-            </div>
-            <br>
-                <button type="button" class="btn btn-danger" onclick="login()"> Login </button>
-        </center>
-    </body>
+  <head> <title> Touch Paint </title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="body-background">
+    <center>
+    <h1> Paint </h1>
+    <canvas id="myCanvas" width="800" height="600"> </canvas>
+    </center>
+    <span> <span> <b> Color: </b> <input id="color_input"> </span> <span> <b> Pen Width: </b> <input id="width_input"> </span> </span>
+  </body>
 </html>
